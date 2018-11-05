@@ -1,4 +1,10 @@
 <div class="trip_show">
+  <div class="stats">
+    <ul>
+      <li>The Total Length of the trip: <%= @trip.total_length %> miles </li>
+      <li>The Average Length of the trip: <%= @trip.average_length %> miles </li>
+    </ul>
+  </div>
   <h1><%= @trip.name %></h1>
   <% @trip.trails.each do |trail| %>
     <div class="trip_trail_<%=trail.id %>">
