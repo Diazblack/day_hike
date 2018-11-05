@@ -1,0 +1,11 @@
+<div class="trip_show">
+  <h1><%= @trip.name %></h1>
+  <% @trip.trails.each do |trail| %>
+    <div class="trip_trail_<%=trail.id %>">
+      <%= trail.name %>
+      <%= trail.address %>
+      <%= trail.length %>
+  <% end  %>
+  </div>
+
+</div>
