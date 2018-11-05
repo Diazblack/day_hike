@@ -26,5 +26,4 @@ describe  'User goes to hiking trips index ' do
     expect(current_path).to eq(trip_path(@trip_1))
 
   end
-
 end
